@@ -5,10 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thais Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-    
+    <header>
+        <nav>
+            <a href="Title" class="logo">Circle</a>
+            <a href="Home" class="nav-link">Home</a>
+            <a href="Projects" class="nav-link">Projects</a>
+            <a href="Services" class="nav-link"> Services</a>
+            <a href="form.html" class="nav-link contact-btn">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="general-information" class="hero">
+        <div class="hero-content">
+            <h1>Empower Your Business With Stunning Desing!</h1>
+            <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile
+                apps.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Get in touch</button>
+                <button class="btn-secondary">See our work</button>
+            </div>
+        </div>
+        <div class="hero-images">
+            <img src="material/hero-section/hero-image.png" alt="Hero Image" class="hero-image">
+            <img src="material/hero-section/card-1.png" alt="Card 1" class="card-image card-1">
+            <img src="material/hero-section/card-2.png" alt="Card 2" class="card-image card-2">
+        </div>
+    </section>
+
+    <br><br><br><br>
+
+    <section class="projects-section">
+        <h2>Recent Projects</h2>
+        <br>
+        <div class="project simplify">
+            <img src="material/projects-section/1.jpg" alt="Simplify">
+            <h3>Simplify</h3>
+            <p>UI Design & App Development</p>
+            <button>Learn more</button>
+        </div>
+        <div class="project dashcoin">
+            <img src="material/projects-section/2.jpg" alt="Dashcoin">
+            <h3>Dashcoin</h3>
+            <p>Web Development</p>
+            <button>Learn more</button>
+        </div>
+        <div class="project vectorify">
+            <img src="material/projects-section/3.jpg" alt="Vectorify">
+            <h3>Vectorify</h3>
+            <p>User Experience Design</p>
+            <button>Learn more</button>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="testimonial-content">
+            <h2>Hear What Our Clients Have to Say</h2>
+            <p class="testimonial-quote">
+                Circle helped us through every stage of our startup. <br>
+                We really enjoyed working with you."
+            </p>
+            <div class="testimonial-author"></div>
+            <img src="material/testimonial-section/profile.png" alt="Profile Picture" class="author-image">
+            <p>Kristin Watson<br>Booking.com</p>
+            </div>
+        </div>
+        <div class="testimonial-memojis">
+            <img src="material/testimonial-section/memoji-1.png" alt="Memoji 1" class="memoji memoji-1">
+            <img src="material/testimonial-section/memoji-2.png" alt="Memoji 2" class="memoji memoji-2">
+            <img src="material/testimonial-section/memoji-3.png" alt="Memoji 3" class="memoji memoji-3">
+            <img src="material/testimonial-section/memoji-4.png" alt="Memoji 4" class="memoji memoji-4">
+        </div>
+    </section>
+
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <br>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>User Interface Design</h3>
+                <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="service-box">
+                <h3>User Experience Design</h3>
+                <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="service-box">
+                <h3>Application Development</h3>
+                <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <button>Learn more</button>
+        </div>
+    </section>
+
+    <section class="email-form-section">
+        <h2>Do you have any question?</h2>
+        <h3>Let us help you!</h3>
+        <form action="/submit-email" method="post" class="email-form">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Suscribe</button>
+    </section>
+
+
+    <footer>
+        <h3>Circle</h3>
+        <p>2972 Westheimer Rd. Santa Ana,
+            Illinois 85486</p>
+        <a href="Team">Team</a>
+        <a href="Services">Services</a>
+        <a href="About Us">About Us</a>
+        <a href="Press">Press</a>
+        <a href="Projects">Projects</a>
+        <a href="Privacy Policy">Privacy Policy</a>
+    </footer>
+
+
+
 </body>
+
 </html>

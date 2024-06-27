@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f7fa;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #666;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.logo {
+    font-weight: bold;
+    color: #3366ff;
+    font-size: 1.5em;
+}
+
+.contact-btn {
+    background-color: #3366ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #254eda;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3366ff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #254eda;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: #666;
+}
+
+.btn-secondary:hover {
+    background-color: #ccc;
+}
+
+.hero-images {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.hero-image {
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.card-image {
+    position: absolute;
+    z-index: 2;
+}
+
+.card-1 {
+    top: 10px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.card-2 {
+    bottom: 10px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 40px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1 1 300px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.project p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project button {
+    background-color: #3366ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project button:hover {
+    background-color: #254eda;
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        max-width: none;
+        width: 80%;
+    }
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #1e2a38;
+    color: #fff; 
+    text-align: center; 
+    padding: 60px 20px; 
+    position: relative; 
+}
+
+.testimonial-section h2 {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+}
+
+.testimonial-quote {
+    font-size: 1.5em; 
+    color: #fbb034; 
+    margin-bottom: 20px; 
+}
+
+.testimonial-author {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.author-image {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+}
+
+.testimonial-author p {
+    font-size: 1em; 
+}
+
+.testimonial-memojis {
+    position: absolute; 
+    width: 100%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.memoji {
+    position: absolute; 
+    width: 60px; 
+    height: auto; 
+}
+
+.memoji-1 {
+    top: 20px; 
+    left: 20px; 
+}
+
+.memoji-2 {
+    bottom: 20px; 
+    left: 20px; 
+}
+
+.memoji-3 {
+    top: 20px; 
+    right: 20px; 
+}
+
+.memoji-4 {
+    bottom: 20px; 
+    right: 20px;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.service-box button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.service-box button:hover {
+    background-color: #004494;
+}
+
+/* Email form section*/
+
+.email-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f7fc;
+    text-align: center;
+}
+
+.email-form-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.email-form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.email-form button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.email-form button:hover {
+    background-color: #004494;
+}
